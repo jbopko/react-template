@@ -7,8 +7,8 @@ function AppBanner() {
   // <p className='mtop'>π This is my playground  π</p>
 
   return (
-    <section className="App-section">
-      <div className="App-section-slice App-Intro">
+    <section>
+      <div>
         <h3>
 &pi; r
           <sup>2</sup>
@@ -18,6 +18,7 @@ function AppBanner() {
           <li>Pi times Radius squared</li>
         </ol>
       </div>
+      <p>π This is my playground  π</p>
     </section>
   );
 }

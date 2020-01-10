@@ -21,7 +21,8 @@ sub, sup{font-size:100%; line-height:0; position:relative; vertical-align:baseli
 sup{top:-0.5em}
 sub{bottom:-0.25em}
 body { margin: 0; font-size: 1em; line-height: 1.5; width:100%;}
-a { color: var(--themeDark);
+a {
+	color: var(--themeDark);
 	font-weight: normal;
 	cursor: pointer;
 	text-decoration: none; 
@@ -75,21 +76,11 @@ a img:hover {opacity: 0.6;}
 .button, input[type="submit"], button, .toggle-title {
 	color: var(--themeDark);
 	text-shadow: 0 1px 0 var(--themeHighlight);
-	/* border: solid 1px var(--themeDark); */
 	text-decoration: none;
 	cursor: pointer;
 	border-radius: 2px;	
 	transition: 0.2s linear all;
 }
-/* .button:hover input[type="submit"]:hover, button:hover, .toggle-title:hover {
-	color: var(--themeError);
-	background: var(--themeHighlight);
-}
-.button:focus, input[type="submit"]:focus, button:focus, .toggle-title:focus {
-	background: var(--themeWhite);
-	border-color: var(--themeDark);
-	color: var(--themePrimary);
-} */
 /* ----- PRINT STYLES -------------------------------- */
 @media print{ 
 	*{background:transparent !important; color:black !important; text-shadow:none !important; filter:none !important; -ms-filter:none !important}
