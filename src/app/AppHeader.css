@@ -1,0 +1,12 @@
+/* .App-header {
+    height: 150px;
+    text-align: center;
+  } */
+  .App-logo {
+    animation: spin infinite 15s linear;
+    height: 80px;
+  }  
+header nav ul { float: left; overflow: hidden; padding: 0 1em 0 1em; border-left: 1px solid var(--themePrimary); line-height: 2em; }
+header, nav {display: block}
+nav a { text-decoration: none; color: var(--themePrimary); }
+.navactive { color: var(--themeWhite); }

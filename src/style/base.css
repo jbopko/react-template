@@ -1,0 +1,105 @@
+html {
+	--themeBlack: rgba(26, 48, 80, 1.0);
+	--themeWhite: rgba(231, 236, 239, 1.0);
+	--themeHighlight: rgba(231, 236, 239, 0.5);
+	--themeHighlightError: rgba(160, 40, 86, 1.0);
+	--themeGrey:rgba(139, 140, 137, 1.0);
+	--themeDark:rgba(39, 76, 119, 1.0);
+	--themeLight:rgba(163, 206, 241, 1.0);
+	--themePrimary:rgba(96, 150, 186, 1);
+	--themeError:rgba(160, 40, 86, 1);
+	--themeLight2:rgba(163, 206, 241, 0.5);
+	--themeDark2:rgba(39, 76, 119, 0.5);
+	--themePrimary2:rgba(96, 150, 186, .5);
+}
+html, button, input, select, textarea {
+	color: var(--themeDark);
+	font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+sub, sup{font-size:100%; line-height:0; position:relative; vertical-align:baseline}
+sup{top:-0.5em}
+sub{bottom:-0.25em}
+body { margin: 0; font-size: 1em; line-height: 1.6; width:100%;}
+a { color: var(--themeDark);
+	font-weight: normal;
+	cursor: pointer;
+	text-decoration: none; 
+	transition:color 0.2s ease; 
+	-moz-transition:color 0.2s ease; 
+	-webkit-transition:color 0.2s ease;
+	-o-transition:color 0.2s ease;}
+a:hover { 
+	color: var(--themeWhite);
+	text-decoration: none; 
+} 
+a:visited{opacity:1.0;}
+a:active, a:focus{position:relative;top:1px;}
+ol{margin:0 0 0 0px;}
+ul{list-style:none; list-style-image:none; margin:0; padding:0;}
+figure { max-height: 100%; overflow: hidden;}
+img{ border:0; -ms-interpolation-mode:bicubic; vertical-align:middle; max-width: 90%; height: auto; width: auto; }
+button, input, select, textarea{line-height:normal; *overflow:visible}
+button, input[type="button"], input[type="reset"], input[type="submit"]{cursor:pointer; -webkit-appearance:button}
+h1,h2,h3,h4,h5,h6{margin:0 0 .33em; font-weight: normal; letter-spacing: -0.075em; color: var(--themeDark); }
+a h1 { color: var(--themePrimary); padding-left: 1.5em;}
+a img {
+    -webkit-transition: opacity 1s ease;
+    -moz-transition: opacity 1s ease;
+    -o-transition: opacity 1s ease;
+    -ms-transition: opacity 1s ease;
+    transition: opacity 1s ease; }
+a img:hover {opacity: 0.6;}
+/** General class styles **/
+.container {background-color: var(--themeDark);}
+.home-page {margin: 0em; border: 1px solid var(--themeDark); border-radius: 5px;}
+.hidden{display:none !important; visibility:hidden}
+.mright{ margin-right: 2em;}
+.mleft{ margin-left: 2em;}
+.mtop{ margin-top: 2em;}
+.mbottom{ margin-bottom: 2em;}
+.fright, .fleft{display:block; overflow:hidden}
+.fright{float:right}
+.fleft{float:left}
+.tleft{text-align: left;} 
+.tcenter{text-align: center;} 
+.tright{text-align: right;} 
+.tjust{text-align: justify;} 
+.col-full {width: 95%; }
+.col-one-half {width: 47%; }
+.col-one-third {width: 31%; }
+.col-two-thirds {width: 64.666%; }
+.col-one-quarter {width: 23%; }
+.col-three-quarters {width: 75%; }
+/* ---------- BUTTONS ----------------------------- */
+.button, input[type="submit"], button, .toggle-title {
+	color: var(--themeDark);
+	text-shadow: 0 1px 0 var(--themeHighlight);
+	/* border: solid 1px var(--themeDark); */
+	text-decoration: none;
+	cursor: pointer;
+	border-radius: 2px;	
+	transition: 0.2s linear all;
+}
+/* .button:hover input[type="submit"]:hover, button:hover, .toggle-title:hover {
+	color: var(--themeError);
+	background: var(--themeHighlight);
+}
+.button:focus, input[type="submit"]:focus, button:focus, .toggle-title:focus {
+	background: var(--themeWhite);
+	border-color: var(--themeDark);
+	color: var(--themePrimary);
+} */
+/* ----- PRINT STYLES -------------------------------- */
+@media print{ 
+	*{background:transparent !important; color:black !important; text-shadow:none !important; filter:none !important; -ms-filter:none !important}
+	abbr[title]:after{content:"("attr(title) ")"}
+	pre, blockquote{page-break-inside:avoid}
+	thead{display:table-header-group}
+	tr, img{page-break-inside:avoid}
+	img{max-width:100% !important}
+	p, h2, h3{orphans:3; widows:3}
+	h2, h3{page-break-after:avoid} 
+}
+/* ----- Phone and Tablet ------------------------ */
+@media only screen and (max-width: 480px) {.App-view-slice { width: 100%; }}
