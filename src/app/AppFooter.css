@@ -1,8 +1,0 @@
-.App-footer {
-    background-color:var(--themeDark);
-    border: 1px solid var(--themePrimary);
-    border-radius: 5px;
-    text-align: left;
-    display: flex;
-    padding: 1em;
-}

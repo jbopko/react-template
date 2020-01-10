@@ -1,25 +1,27 @@
 import React from 'react';
+import './AppBanner.scss';
 
-function AppBanner() {
-  // <li>A = π r2</li>
-  // <li>...or, when you know the Diameter:  A = (π/4) × D2</li>
-  // <li>...or, when you know the Circumference:  A = C2 / 4π</li></ol> */}
-  // <p className='mtop'>π This is my playground  π</p>
+const AppBanner = () => {
+  const header = 'πr';
+  const addendum = '2';
+  const liArea = 'The area of a circle';
+  const liRadius = 'Pi times radius squared';
+  const playground = 'π This is my playground π';
 
   return (
     <section>
       <div>
         <h3>
-&pi; r
-          <sup>2</sup>
+          {header}
+          <sup>{addendum}</sup>
         </h3>
         <ol>
-          <li>The area of a circle</li>
-          <li>Pi times Radius squared</li>
+          <li>{liArea}</li>
+          <li>{liRadius}</li>
         </ol>
       </div>
-      <p>π This is my playground  π</p>
+      <p>{playground}</p>
     </section>
   );
-}
+};
 export default AppBanner;

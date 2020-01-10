@@ -1,6 +1,7 @@
 {
   "name": "react-template",
   "version": "1.0.0",
+  "description": "A minimalist template for react with transpiling and testing",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -15,7 +16,13 @@
   "scripts": {
     "start": "webpack-dev-server --open --mode development",
     "build": "webpack --mode production",
-    "test": "react-scripts test",
+    "_postbuild": "npm run docs",
+    "test": "jest --coverage --runInBand --ci --cache=false",
+    "coverage": "jest --coverage --cache=false --runInBand --ci --coverageReporters=text-lcov | coveralls",
+    "test:watch": "jest --watch",
+    "deploy": "babel-node scripts/deploy.js",
+    "docs": "typedoc --out docs src",
+    "scriptstest": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -33,6 +40,22 @@
       "last 1 safari version"
     ]
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbopko/react-template.git"
+  },
+  "keywords": [
+    "react",
+    "webpack",
+    "babel",
+    "template"
+  ],
+  "author": "jbopko@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jbopko/react-template/issues"
+  },
+  "homepage": "https://github.com/jbopko/react-template#readme",
   "devDependencies": {
     "@babel/core": "^7.7.7",
     "@babel/node": "^7.7.7",

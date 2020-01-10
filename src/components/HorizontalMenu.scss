@@ -1,0 +1,18 @@
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 1em;
+  overflow: hidden;
+  align-self: stretch;
+}
+
+footer li {
+  float: left;
+  padding: 1em;
+}
+
+footer li a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
