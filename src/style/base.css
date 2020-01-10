@@ -20,7 +20,7 @@ html, button, input, select, textarea {
 sub, sup{font-size:100%; line-height:0; position:relative; vertical-align:baseline}
 sup{top:-0.5em}
 sub{bottom:-0.25em}
-body { margin: 0; font-size: 1em; line-height: 1.6; width:100%;}
+body { margin: 0; font-size: 1em; line-height: 1.5; width:100%;}
 a { color: var(--themeDark);
 	font-weight: normal;
 	cursor: pointer;

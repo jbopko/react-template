@@ -37,7 +37,6 @@ function AppFooter() {
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-      <h3>Footer!</h3>
     </footer>
   );
 }

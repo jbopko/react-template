@@ -1,14 +1,14 @@
 import React from 'react';
-import './Works.css'
+import './Works.css';
 import imgSearch from '../images/search-logo.png';
 import imgSports from '../images/sports-logo.png';
 import imgTTT from '../images/ttt-logo.png';
 import imgBCase from '../images/bc-logo.png';
 
-function Projects(props) {
+function Projects() {
   return (
-    <section className='App-section'>
-      <h3 className='mleft'>A few projects</h3>
+    <section className="App-section">
+      <h3 className="mleft">A few projects</h3>
       <figure className="App-section-slice col-one-quarter">
         <a href="work1.html"><img src={imgTTT} alt="" /></a>
         <figcaption>
