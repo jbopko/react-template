@@ -66,3 +66,13 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+Need to work on extracting CSS...
+{
+    loader: 'css-loader',
+    options: {
+        importLoaders: 1,
+        modules: true,
+    },
+}

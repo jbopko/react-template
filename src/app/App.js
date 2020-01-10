@@ -1,10 +1,8 @@
 import React from 'react';
 import AppHeader from './AppHeader';
 import AppFooter from './AppFooter';
-import Introduction from './Introduction';
-import Notes from './Notes';
-import Projects from './Projects';
-import Game from '../game/components/Game';
+import Introduction from './AppBanner';
+import Notes from './AppContent';
 import './App.css';
 
 function App() {
@@ -12,7 +10,6 @@ function App() {
     <div>
       <AppHeader />
       <Introduction />
-      <Projects />
       <Notes />
       <AppFooter />
     </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Introduction() {
+function AppBanner() {
   // <li>A = π r2</li>
   // <li>...or, when you know the Diameter:  A = (π/4) × D2</li>
   // <li>...or, when you know the Circumference:  A = C2 / 4π</li></ol> */}
@@ -21,4 +21,4 @@ function Introduction() {
     </section>
   );
 }
-export default Introduction;
+export default AppBanner;
