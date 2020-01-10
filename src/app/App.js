@@ -1,16 +1,16 @@
 import React from 'react';
 import AppHeader from './AppHeader';
 import AppFooter from './AppFooter';
-import Introduction from './AppBanner';
-import Notes from './AppContent';
+import AppBanner from './AppBanner';
+import AppContent from './AppContent';
 import './App.css';
 
 function App() {
   return (
     <div>
       <AppHeader />
-      <Introduction />
-      <Notes />
+      <AppBanner />
+      <AppContent />
       <AppFooter />
     </div>
   );
