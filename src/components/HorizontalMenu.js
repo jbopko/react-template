@@ -3,9 +3,10 @@ import './HorizontalMenu.scss';
 
 function HorizontalMenu(props) {
   const { items } = props;
+  let i = 1;
   const listItems = items.map((menuItem) => (
-    <li key={menuItem[0]}>
-      <a href={menuItem[1]}>{menuItem[2]}</a>
+    <li key={i++}>
+      <a href={menuItem[0]}>{menuItem[1]}</a>
     </li>
   ));
   return (

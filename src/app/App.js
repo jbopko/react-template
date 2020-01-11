@@ -22,17 +22,17 @@ const headerMenu = [
 ];
 
 const footerMenu = [
-  [1, 'index.js', 'Home'],
-  [2, 'about.js', 'About'],
-  [3, 'works.js', 'Apps'],
-  [4, 'services.js', 'Services'],
-  [5, 'blog.js', 'Blog'],
+  ['index.js', 'Home'],
+  ['about.js', 'About'],
+  ['works.js', 'Apps'],
+  ['services.js', 'Services'],
+  ['blog.js', 'Blog'],
 ];
 
 const socialMedia = [
-  [1, '_self', 'Instagram'],
-  [2, '_self', 'Facebook'],
-  [3, '_self', 'LinkedIn'],
+  ['_self', 'Instagram'],
+  ['_self', 'Facebook'],
+  ['_self', 'LinkedIn'],
 ];
 
 const copyright = 'Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using this site, you agree to have read and accepted our terms of use, cookie and privacy policy. Copyright 1999-2020 by Refsnes Data. All Rights Reserved.';
@@ -41,8 +41,12 @@ function App() {
   return (
     <div>
       <AppHeader headerMenu={headerMenu} />
-      <AppBanner />
-      <AppContent />
+      <div>
+        <div>Here</div>
+        <AppBanner />
+        <AppContent />
+        <div>Here</div>
+      </div>
       <AppFooter footerMenu={footerMenu} socialMedia={socialMedia} copyright={copyright} />
     </div>
   );

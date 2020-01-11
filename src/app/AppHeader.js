@@ -11,22 +11,10 @@ function AppHeader(props) {
     <header>
       <img src={logo} className="App-logo" alt="PyreSquared Productions" />
       <nav>
-        <VerticalMenu items={headerMenu[0]} />
-        <VerticalMenu items={headerMenu[1]} />
-        <VerticalMenu items={headerMenu[2]} />
+        <VerticalMenu headerMenu={headerMenu} />
       </nav>
       <a href="index.html"><h1>PyreSquared Software</h1></a>
     </header>
   );
-  // const { menuItems, socialMedia } = props;
-
-  // return (
-  //   <footer>
-  //     <nav>
-  //       <HorizontalMenu items={menuItems} />
-  //       <HorizontalMenu items={socialMedia} />
-  //     </nav>
-  //   </footer>
-  // );
 }
 export default AppHeader;
