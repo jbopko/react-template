@@ -1,0 +1,9 @@
+p sub {
+  vertical-align: sub;
+  font-size: smaller;
+  color: var(--themePrimary);
+  text-align: center;
+  margin: 0em 2em;
+  padding: 0em 2em;
+  display: inline;
+}

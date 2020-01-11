@@ -1,18 +1,19 @@
+footer {
+  padding: 0.5em 0em 2em 0em;
+}
 footer ul {
   list-style-type: none;
   margin: 0;
-  padding: 1em;
+  padding: 0em 1em 0em 1em;
   overflow: hidden;
-  align-self: stretch;
+  text-align: center;
 }
 
 footer li {
-  float: left;
-  padding: 1em;
+  padding: 0em 1em 0em 1em;
+  display: inline-block;
 }
 
 footer li a {
-  display: block;
-  text-align: center;
   text-decoration: none;
 }

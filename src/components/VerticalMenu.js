@@ -1,7 +1,6 @@
 import React from 'react';
-import './HorizontalMenu.scss';
 
-function HorizontalMenu(props) {
+function VerticalMenu(props) {
   const { items } = props;
   const listItems = items.map((menuItem) => (
     <li key={menuItem[0]}>
@@ -12,4 +11,4 @@ function HorizontalMenu(props) {
     <ul>{listItems}</ul>
   );
 }
-export default HorizontalMenu;
+export default VerticalMenu;
