@@ -2,9 +2,10 @@ import React from 'react';
 
 function VerticalMenuColumn(props) {
   const { items } = props;
+  let i = 1;
   const menu = items.map((item) => (
-    <li key={item[0]}>
-      <a href={item[1]}>{item[2]}</a>
+    <li key={i++}>
+      <a href={item[0]}>{item[1]}</a>
     </li>
   ));
   return (

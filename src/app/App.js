@@ -7,17 +7,17 @@ import './App.css';
 
 const headerMenu = [
   [
-    [11, 'tech.js', 'Technology'],
-    [12, 'service.js', 'Services'],
-    [13, 'blog.js', 'Blog'],
+    ['tech.js', 'Technology'],
+    ['service.js', 'Services'],
+    ['blog.js', 'Blog'],
   ],
   [
-    [21, 'tech.js', 'Technology'],
-    [22, 'service.js', 'Services'],
+    ['tech.js', 'Technology'],
+    ['service.js', 'Services'],
   ],
   [
-    [31, 'index.js', 'Home'],
-    [32, 'about.js', 'About'],
+    ['index.js', 'Home'],
+    ['about.js', 'About'],
   ],
 ];
 
@@ -42,10 +42,9 @@ function App() {
     <div>
       <AppHeader headerMenu={headerMenu} />
       <div>
-        <div>Here</div>
         <AppBanner />
         <AppContent />
-        <div>Here</div>
+        <AppContent />
       </div>
       <AppFooter footerMenu={footerMenu} socialMedia={socialMedia} copyright={copyright} />
     </div>
